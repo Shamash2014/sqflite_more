@@ -10,16 +10,21 @@ dependencies:
   flutter:
     sdk: flutter
   moor_ffi:
-  sqflite: '>=1.2.1-dev.2'
+  sqflite:
+    git:
+      url: https://github.com/Shamash2014/sqflite_sqlcipher.git
+      ref: 8f7a3899d3bd80090a8be2f68a0f285e753401e9
+      path: sqflite
+
   path:
-  synchronized: '>=2.2.0'
+  synchronized: ">=2.2.0"
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  process_run: '>=0.10.7'
+  process_run: ">=0.10.7"
 dependency_overrides:
-  pedantic: '>=1.9.0'
+  pedantic: ">=1.9.0"
 #  sqflite:
 #    path: ../../sqflite/sqflite
 
@@ -28,7 +33,6 @@ dependency_overrides:
 
 # The following section is specific to Flutter.
 flutter:
-
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -39,7 +43,6 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # To add custom fonts to your package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
